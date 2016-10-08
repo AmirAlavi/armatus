@@ -114,7 +114,7 @@ Example Run
 The main inputs into Armatus are the matrix file (in the format of Dixon et al.: http://chromosome.sdsc.edu/mouse/hi-c/download.html) and the gammaMax parameter which determines the highest resolution at which domains are to be generated.  *Note*: we recently noticed that the format of the matrices of Dixon et al. in the link above has changed.
 An example run on chromosome 1 of a human fibroblast:
 
-    time armatus -i IMR90/40kb/combined/chr1.nij.comb.40kb.matrix.gz -g .5 -o test -m
+    time armatus -i IMR90/40kb/combined/chr1.nij.comb.40kb.matrix.gz -r 40000 -g .5 -o test -m
 
     Multiresoultion ensemble will be written to files
     Reading input from IMR90/40kb/combined/chr1.nij.comb.40kb.matrix.gz.

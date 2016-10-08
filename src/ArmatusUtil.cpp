@@ -193,7 +193,6 @@ DomainSet consensusDomains(WeightedDomainEnsemble& dEnsemble) {
         auto& dSet = dEnsemble.domainSets[dSetIdx];
         auto weight = dEnsemble.weights[dSetIdx];
         for (auto& domain : dSet) {
-            if ( pmap.find(domain) == pmap.end() ) pmap[domain] = 0;
             pmap[domain] += weight;
         }
     }
